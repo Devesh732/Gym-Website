@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Martel+Sans:wght@600;700;900&family=Oswald:wght@200..700&family=Playwrite+HU:wght@100..400&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Martel+Sans:wght@600;700;900&family=Oswald:wght@200..700&family=Playwrite+HU:wght@100..400&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}
+body{
+    background-color: rgb(15, 14, 14); 
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: fixed;
+    z-index: 10;
+}
+.logo {
+    height: 60px;
+    width: 120px;
+    margin-left: 50px;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 700;
+    color: chartreuse;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.nav-c{
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-gap: 20px;
+}
+.nav-c button{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: 20px;
+}
+.nav-c button:hover{
+    height: 50px;
+    width: 60px;
+    background-color: chartreuse;
+    color: white;
+    font-weight: bold;
+}
+/* first half */
+.first-half img{
+    height: 600px;
+    width: 100%;
+    background-color: dimgrey;
+    position: relative;
+    margin-top: 30px;
+    z-index: -1;
+}
+.inner-first-half{
+    height: 250px;
+    width: 50%;
+    margin-left: 40px;
+    position: absolute;
+    left: 60px;
+    top: 160px;
+    z-index: 1;
+}
+.semi-bold-head{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(98, 155, 41);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bold-head{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    line-height: 50px;
+    color: white;
+    text-wrap: nowrap;
+    overflow-wrap: normal;
+}
+.left-btn,
+.right-btn{
+    margin-top: 20px;
+    height: 40px;
+    width: 110px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(108, 214, 2);
+    color: white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.img-slider{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+
+}
+.img-slider button{
+    height: 15px;
+    width: 15px;
+    background-color: rgb(108, 214, 2);
+    border: none;
+    cursor: pointer;
+}
+.img-slider button:hover{
+    background-color: dimgray;
+    border: 1px double white;
+}
+
+/* second-half */
+.second-half{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.second-half-head{
+    height: 60px;
+    width: 220px;
+    border: 2px solid green;
+    background-color: black;
+    color:chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.inner-content{
+    height: 100%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    background-color: rgb(58, 57, 57);
+    overflow: hidden;
+}
+.inner-content div img{
+    width: 360px;
+    height: 100%;
+}
+.inner-content div img:hover{
+    transform: scale(1.008);
+}
+.inner-con-catlog{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 120px 20px 60px 50px;
+    color: white;
+}
+.inner-con-catlog div h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: chartreuse;
+}
+.inner-con-catlog p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+.inner-con-catlog button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: chartreuse;
+    color: white;
+    margin-left: 32%;
+    cursor: pointer;
+}
+.inner-con-catlog button:hover{
+    transform: scale(1.04);
+}
+.icon-img{
+    height: 100%;
+    width: 50%; 
+}
+
+/* third-half */
+.third-half{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 40px 20px;
+
+}
+.third-half-image{
+    margin: 20px 10px 20px;
+    height: 500px;
+    width: 480px;
+    background-color: brown;
+    border-top: 10px solid greenyellow;
+    border-right:10px solid greenyellow ;
+    background-image: url('assets/third.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.third-half-block{
+    margin: 20px 10px 20px;
+    height: 500px;
+    width: 50%;
+    color: white;
+    padding-left: 40px;
+}
+.third-p{
+    font-size: 15px;
+    font-weight: 400;
+    color: greenyellow;
+    line-height: 15px;
+}
+.third-half-block h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.third-half-block p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: greenyellow;
+}
+.third-half-block button{
+    height: 30px;
+    width: 90px;
+    background-color: greenyellow;
+    color: whitesmoke;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    margin:30px 0px 30px;
+    cursor: pointer;
+}
+.third-half-block button:hover{
+    transform: scale(1.2);
+}
+.third-half-grid{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 120px 120px;
+    grid-gap: 10px;
+
+}
+.third-half-grid div{
+    height: 100%;
+    width: 100%;
+}
+.inner-grid{
+    display: flex;
+    flex-direction: column;
+}
+.inner-grid-1{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+.inner-grid-1 img{
+    height: 25px;
+    width: 25px;
+}
+.inner-grid-1 div{
+    font-weight: 500;
+    font-size: 15px;
+}
+.inner-grid-2{
+    font-size: 11px;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-top: 0;
+}
+/* fourth page */
+.fourth-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pricing {
+  padding: 50px 20px;
+}
+
+.pricing h1 {
+  font-size: 2.5rem;
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+
+.pricing p {
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+/* Container for Cards */
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cards */
+.card {
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card h2 {
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+
+.card .price {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.card ul li {
+  margin: 10px 0;
+  color: #ddd;
+}
+
+/* Card Colors */
+.black-card {
+  background-color: #000;
+}
+
+.gray-card {
+  background-color: #222;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: greenyellow;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #adff2f;
+  transform: scale(1.05);
+}
+
+/* Hover Effect on Cards */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px greenyellow;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+hr{
+    padding: 1px 20px;
+    background-color: greenyellow;
+    border: none;
+    color: black;
+}
+/* footer */
+.footer {
+  background: #000;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer h2 {
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+
+.footer h3 {
+  color: greenyellow;
+  margin-bottom: 15px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: greenyellow;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: greenyellow;
+}
+
+.footer-bottom {
+  border-top: 1px solid greenyellow;
+  padding-top: 15px;
+  font-size: 14px;
+}
